@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header  */
+header {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.navbar {
+    height: 8vh;
+    width: 95vw;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-toggle {
+    display: none;
+}
+.navbar .main-icon img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.navbar .main-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar .main-icon h3 {
+    font-family: 'Dancing Script', cursive;
+    margin: 0px 7px;
+}
+
+.navbar .nav ul {
+    display: flex;
+    flex-direction: row;
+}
+.navbar .nav ul li {
+    list-style: none;
+}
+.navbar .nav ul li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    color: #208F27;
+}
+
+header .navbar .btn {
+    background: #208F27;
+    padding: 3px 15px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section .main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+section .main-text h1 {
+    font-size: 100px;
+    line-height: 120px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+section .main-text h2 {
+    font-size: 35px;
+    margin-left: 40px;
+    font-weight: 200;
+}
+section .main-text .btn {
+    background: #208F27;
+    padding: 3px 15px;
+    border-radius: 6px;
+    color: #fff;
+    width: 140px;
+    margin: 40px;
+
+}
+section .main-card {
+    width: 50vw;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+section .main-card #tree{
+    height: 560px;
+    width: 620px;
+}
+section .main-card #card {
+    display: flex;
+    position: absolute;
+    right:100px;
+    bottom: 0px;
+    width: 265px;
+    height: 450px;
+}
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #208F27;
+    height: 110px;
+    width: 50vw;
+    justify-content: space-around;
+    border-radius: 20px 20px 0px 0px;
+}
+footer .ft-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.836);
+}
+footer .ft-text h2{
+    font-size: 20px;
+}
+footer .ft-text h3{
+    font-size: 15px;
+    font-weight: 200;
+}
+footer .ft-email {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.836);
+}
+footer .ft-email h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+footer .ft-email input {
+    
+    width: 180px;
+    border: none;
+    border-bottom:2px solid #fff;
+    background: #208F27;
+}
+footer .ft-email input:focus {
+    outline: none;
+}
+#ft-img-left {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    left: 17%;
+}
+#ft-img-right {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    right: 18%;
+}
+@media screen and (max-width: 1200px) {
+    header {
+        background: rgba(199, 228, 36, 0.719);
+    }
+    header .navbar .btn {
+        display: none;
+    }
+    .navbar .nav {
+        position: absolute;
+        top: 50px;
+        display: none;
+    }
+    .navbar .nav ul {
+        flex-direction: column;
+        background: rgb(125, 216, 122);
+        
+    }
+    .navbar .nav ul li {
+        margin: 4px 0;
+        text-align: center;
+        width: 100vw;
+        border-bottom: 3px solid #208F27;
+        
+    }
+    .navbar .nav ul li a{
+        font-size: 1.3rem;
+        
+    }
+    .navbar  {
+        flex-direction: column;
+        height: 150px;
+    } 
+    
+    .nav-toggle:checked ~ .nav {
+        display: flex;
+    }
+    .nav-toggle-label {
+        position: absolute;
+        right: 20px;
+    top: 25px;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: flex;
+    background: #000;
+    height: 2px;
+    width: 2rem;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+.navbar .main-icon h3{
+    font-size: 1.5rem;
+}
+.navbar .main-icon img{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.navbar .main-icon{
+    display: flex;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    
+}
+
+section {
+    flex-direction: column;
+}
+section .main-card {
+    position: relative;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+section .main-card #tree {
+    width: 90vw;
+    height: auto;
+}
+section .main-card #card {
+    align-self: center;
+    width: 90vw;
+    height: 50vh;
+    left: 20px;
+    top: 180px;
+}
+section .main-text {
+    width: 100vw;
+}
+section .main-text h1 {
+    margin: 70px 40px;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+section .main-text h2 {
+    font-size: 1.2rem;
+}
+section .main-text .btn {
+    margin: 80px 40px;
+    transform: scale(1.2);
+}
+
+footer {
+    position: relative;
+    flex-direction: column;
+    top: 250px;
+    height: 30vh;
+    width: 90vw;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+footer .ft-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .ft-email {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#ft-img-left {
+    display: none;
+}
+#ft-img-right {
+    display: none;
+}
+
+}
